@@ -92,6 +92,16 @@ app.post("/inserisciDati",(req,res)=>{
         res.send("Hai già votato!");
         return;
     } else {
+       // Controllo se l'utente ha già votato per un altro candidato
+       const votanteGiaVotato = candidati.some(candidato => {
+        const votantiCandidato = candidato.votanti || [];
+        return votantiCandidato.some(votante => votante.emailVotante === email);
+        });
+
+        if (votanteGiaVotato) {
+          res.send("Hai già votato per un altro candidato.");
+          return;
+        }
         votanti.push({ nomeVotante: nome, cognomeVotante: cognome, emailVotante: email });
         candidato.votanti = votanti;
         candidato.voti++;

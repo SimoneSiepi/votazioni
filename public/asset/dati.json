@@ -1,23 +1,33 @@
 [
   {
     "nomeCandidato": "pippo",
-    "voti": 1,
+    "voti": 2,
     "votanti": [
       {
         "nomeVotante": "dd",
         "cognomeVotante": "dd",
         "emailVotante": "dd@d"
+      },
+      {
+        "nomeVotante": "as",
+        "cognomeVotante": "as",
+        "emailVotante": "as@as"
       }
     ]
   },
   {
     "nomeCandidato": "paperino",
-    "voti": 1,
+    "voti": 2,
     "votanti": [
       {
         "nomeVotante": "wer",
         "cognomeVotante": "der",
         "emailVotante": "wer@df"
+      },
+      {
+        "nomeVotante": "ss",
+        "cognomeVotante": "ss",
+        "emailVotante": "df@ff"
       }
     ]
   },
