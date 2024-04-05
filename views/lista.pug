@@ -1,0 +1,13 @@
+extends layout
+
+block contenuto
+    if copiacandidati
+        table
+            tr 
+                th.elemento_lista_th nome
+                th.elemento_lista_th voti ottenuti
+            each candidato in copiacandidati
+                tr 
+                    td.elemento_lista_td= candidato.nomeCandidato
+                    td.elemento_lista_td= candidato.voti
+

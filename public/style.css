@@ -1,0 +1,12 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.elemento_lista_th{
+    text-align: center;
+}
+
+.elemento_lista_td{
+    text-align: right;
+}

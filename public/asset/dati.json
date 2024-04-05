@@ -1,0 +1,29 @@
+[
+  {
+    "nomeCandidato": "pippo",
+    "voti": 1,
+    "votanti": [
+      {
+        "nomeVotante": "dd",
+        "cognomeVotante": "dd",
+        "emailVotante": "dd@d"
+      }
+    ]
+  },
+  {
+    "nomeCandidato": "paperino",
+    "voti": 1,
+    "votanti": [
+      {
+        "nomeVotante": "wer",
+        "cognomeVotante": "der",
+        "emailVotante": "wer@df"
+      }
+    ]
+  },
+  {
+    "nomeCandidato": "pluto",
+    "voti": 0,
+    "votanti": []
+  }
+]

@@ -1,0 +1,30 @@
+extends layout
+
+block contenuto
+    if candidati
+        div.titolo
+            h1.testoMenu Vota! 
+        div.form
+            form(action="/inserisciDati", method="post")
+                label(for="nomecandidato") candidati:
+                    select(name="nomecandidato" id="nomecandidato")
+                        each candidato in candidati
+                            option(value=candidato.nomeCandidato)=candidato.nomeCandidato
+                br
+                label(for="nome") nome del Votante
+                input(type="text" id="nome" name="nome")
+                br
+                label(for="cognome") cognome del votante
+                input(type="text", name="cognome" id="cognome")
+                br
+                label(for="email") email del votante
+                input(type="email", name="email" id="email")
+                br
+                input(type="submit", value="invia")
+        a(href="/") home
+        br
+        a(href="/votazioni") votazioni  
+        if messaggio
+            p=messaggio
+    else
+        p#votazioneVuota non ce nessuno da votare  
